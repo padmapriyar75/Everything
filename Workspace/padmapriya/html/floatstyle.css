@@ -1,0 +1,21 @@
+.wrap{
+  margin: auto;
+  width: 500px;
+  padding-top: 50px;
+  background-color: grey;
+  height: 700px;
+  }
+
+.content{
+  float: left;
+  width: 70%;
+  background-color: green;
+
+}
+
+aside{
+  float: right;
+  width: 20%;
+  background-color: red;
+  text-decoration-color: yellow;
+}

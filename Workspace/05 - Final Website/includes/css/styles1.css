@@ -1,0 +1,152 @@
+/*
+
+My Custom CSS
+=============
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+#features {
+	text-align: center;
+}
+
+#features img {
+	margin: 0 0 20px;
+}
+
+#inputMessage {
+	margin-bottom: 15px;
+}
+
+#feat{
+	width: 100%;
+	}
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+body {
+
+	background-image: url(./vipimages.bg.jpg);
+}
+
+.well .page-header {
+	margin-top: 0;
+}
+
+.well .page-header h1 {
+	margin-top: 0;
+}
+
+ul.unstyled {
+	list-style: none;
+	padding: 0;
+}
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+#searchInput {
+	width: 200px;
+}
+
+.navbar-brand {
+	padding: 13px 15px;
+}
+
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+#myCarousel {
+	margin-top: 60px;
+}
+
+.carousel-caption {
+	font-size: 24px;
+}
+
+.carousel-caption h4 {
+	font-size: 32px;
+}
+
+#myCarousel .item { height: 400px; }
+
+#slide1 {
+	background: url('../../vipimages/1_large.jpg') top center no-repeat;
+}
+
+#slide2 {
+	background: url('../../vipimages/2_large.jpg') top center no-repeat;
+}
+
+.car {
+	margin-bottom: 10px;
+}
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+	 .cont{
+		 width: 100%;
+	 }
+	 #rowcont{
+		 width: 100%;
+	 }
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+
+
+}
+
+/* Landscape phone to portrait tablet */
+@media(min-width:481px) and (max-width:768px) {
+
+	#myCarousel .item { height: 250px; }
+
+	#slide1 {
+		background: url('../../vipimages/1_medium.jpg') top center no-repeat;
+	}
+
+	#slide2 {
+		background: url('../../vipimages/2_medium.png') top center no-repeat;
+	}
+
+
+	.carousel-caption {
+		font-size: 16px;
+	}
+
+	.carousel-caption h4 {
+		font-size: 22px;
+	}
+
+}
+
+/* Large desktop */
+@media(min-width:769px) and (min-width: 1200px) {
+
+	#myCarousel .item { height: 400px; }
+
+	#slide1 {
+		background: url('../../vipimages/1_large.jpg') top center no-repeat;
+	}
+
+	#slide2 {
+		background: url('../../vipimages/2_large.jpg') top center no-repeat;
+	}
+
+
+}

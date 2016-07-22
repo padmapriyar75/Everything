@@ -1,0 +1,11 @@
+.form{
+  margin: auto;
+  padding-top: 50px;
+}
+
+ form li{
+   list-style: none;
+   padding-bottom: 20px;
+   display: none;
+ }
+s

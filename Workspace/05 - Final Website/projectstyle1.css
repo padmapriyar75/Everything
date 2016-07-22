@@ -1,0 +1,436 @@
+html,body{
+  height: 100%;
+  width: 100%;
+}
+html{
+  background-color: #222;
+}
+
+body{
+  margin: 4px;
+  background-color: white;
+}
+
+.offers_grid_parent{
+    clear: both;
+    background-color: white;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/*Header Unit - css*/
+header{
+  width: auto;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  /*margin-top: 20px;*/
+  height: 50px;
+  background-color: #222;
+  font-family: 'Pacifico', cursive;
+  font-size: 16px;
+  color: white;
+  }
+header a{
+  color: orange;
+}
+
+.header_top_left{
+  float: left;
+}
+.header_top_right_outer{
+  float: right;
+  padding-right: 10px;
+
+}
+/*End of Header Unit - css*/
+
+/*Hero Unit - css*/
+
+.hero-unit {
+  width: 100%;
+  margin-top: 0%;
+}
+
+.half-col {
+  height: 50%;
+}
+
+.col-1 {
+  float: left;
+  height: 100%;
+  margin-top: 0;
+  background-color: green;
+}
+
+
+.col-2 {
+  width: 50%;
+  float: left;
+  height: 100%;
+  margin-top: 0;
+  background-color: red;
+}
+
+
+
+
+.hero-unit,.hero-unit .full-col {
+  height: 800px;
+  float:left;
+}
+
+
+
+.col-1,.col-3 {
+  width: 25%;
+  }
+
+.half-width {
+  width: 50%;
+}
+
+.col-3{
+  background: pink;
+  float: left;
+  height: 100%;
+}
+
+
+#backpack {
+  background-image: url('./images/backpack.jpg');
+  position: relative;
+  background-size: cover;
+}
+
+#backpack:after {
+    content:' ';
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+}
+#backpack:hover:after {
+    opacity:1;
+}
+
+#rucksack {
+  background-image: url('./images/hiking.jpg');
+  position: relative;
+  background-size: cover;
+}
+
+
+
+#rucksack:after {
+    content:' ';
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+}
+#rucksack:hover:after {
+    opacity:1;
+}
+
+#raincoat {
+   background-image: url('./images/rain.jpg');
+   position: relative;
+   background-size: cover;
+}
+
+#raincoat:after {
+    content:' ';
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+}
+#raincoat:hover:after {
+    opacity:1;
+}
+
+.caption {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* top: 100px; */
+}
+
+.caption-text {
+  position: absolute;;
+  bottom: 2%;
+  right:2%;
+  color: whitesmoke;
+  font-family: 'Roboto';
+  font-size: 25px;
+}
+
+
+#accessories{
+  width: 50%;
+  height: 50%;
+  background-image: url('./images/accessories.jpg');
+  float: left;
+  position: relative;
+  background-size: cover;
+}
+
+
+
+#accessories:after {
+    content:' ';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+
+}
+#accessories:hover:after {
+    opacity:1;
+}
+
+#apparel{
+  width: 50%;
+  height: 50%;
+  background-image: url(./images/apparel.jpg);
+  float: right;
+  position: relative;
+  background-size: cover;
+}
+
+#apparel:after {
+    content:'';
+    color: white;
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+
+}
+#apparel:hover:after {
+    opacity:1;
+}
+
+#footwear{
+  float: left;
+  height: 100%;
+  margin-left: -10px;
+  background-image: url(./images/footwear.jpg);
+  position: relative;
+  background-size: cover;
+}
+
+#footwear:after {
+    content:' ';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+
+}
+#footwear:hover:after {
+    opacity:1;
+}
+
+.container_12{
+    width: 100%;
+}
+
+
+
+
+/*End Of Hero Unit - css*/
+
+
+
+/*Footer- css*/
+
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+footer{
+  float: left;
+  width: 100%;
+  border-width: 1px;
+  font-family: cursive;
+  background-color: #222;
+  min-height: 260px;
+  overflow: hidden;
+  text-align: center;
+  clear: both;
+  position: relative;
+  z-index: 1000;
+}
+
+#footer_allpages{
+  display: block;
+  /* float: left; */
+  width: 100%;
+  top: 20px;
+}
+
+#footer_allpages a{
+  color: white;
+}
+
+
+.ul_hm {
+    float: left;
+    text-align: left;
+    width: 20%;
+    background-color: #222;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: orange;
+  }
+  em{
+    color: orange;
+    }
+.wrap{
+  font-family: cursive;
+}
+  .ul_hm li{
+    line-height: 17px;
+  }
+.fhead {
+     font-size: 20px;
+     margin-bottom: 30px;
+
+}
+.fhead a{
+  color: orange;
+}
+#footerhead{
+  color: orange;
+}
+
+.main{
+  height: 400px;
+}
+
+.social_media_icons{
+    width: 280px;
+    margin: auto;
+}
+
+#social_media_icons span{
+  float: left;
+  margin: 10px;
+}
+
+.social-media{
+  display: block;
+  margin: auto;
+  font-family: cursive;
+  color: Orange;
+  font-size: 20px;
+  width: 520px;
+  height: 200px;
+}
+
+.classname_1{
+  width: 100px;
+  height: 100px;
+  float: left;
+  background-color: #222;
+  padding-top: 0%;
+  margin-top: 0%;
+  position: relative;
+}
+.social-media ul{
+  list-style: none;
+}
+
+.social-media li{
+  display: inline;
+  list-style: none;
+  font-family: cursive;
+  padding-right: 30px;
+}
+
+.fb{
+  background-image: url(./images/facebook.png);
+  position: relative;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+.insta{
+  background-image: url(./images/instagram.png);
+  position: relative;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+.twitter{
+  background-image: url(./images/twitter.png);
+  position: relative;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+.youtube{
+  background-image: url(./images/youtube.png);
+  position: relative;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+/*End Of Footer - css*/
+.rainwear{
+  background-image: url(./images/rainwear.jpg);
+}
+
+.fhead{
+  font-weight:bolder;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.footer_items{
+  font-weight: 400;
+  font-style: normal;
+}
+
+.collections
+{
+    width: 100%;
+    background-color: #444;
+    /* height: 100%; */
+    margin-bottom: -20px;
+    min-height: 400px;
+}
+
+.collections_data{
+  position: relative;
+  top: 50px;
+}
