@@ -1,6 +1,14 @@
-var fs = require('fs');
-var f = fs.readFileSync("India2011.csv","utf8");
-var lines = f.split("\n");
+var fileNames = ["India2011.csv","IndiaSC2011.csv","IndiaST2011.csv"]
+var array=[];
+function fileReader(fileNames)
+{
+  fileNames.map(function(fileName)
+  {
+    var fs = require('fs');
+    var data = fs.readFileSync(fileName).toString();
+
+
+var lines = data.split("\n");
 var last = lines.length-1;//number of records
 var heading=lines[0].split(",");
 var agegroup=heading.indexOf("Age-group"),
@@ -38,7 +46,7 @@ var cat1=heading.indexOf("Educational level - Literate without educational level
         this[key1],
         this[key2]
         }
-    var array=[];
+
     for(i=0;i<arr.length;i++)
     {
       array[i]=new pushingfunc();
@@ -46,8 +54,16 @@ var cat1=heading.indexOf("Educational level - Literate without educational level
     array[i][key2]=total[i];
     console.log(array[i][key2]);
 }
-    var part2json=JSON.stringify(array);
+}});
+var part2json=JSON.stringify(array);
+  function data(){
+    var fs = require('fs');
+
     //console.log(array);
-    fs.writeFile('part2out.json', part2json,'utf8', function (err) {
+    fs.writeFile('a2out.json', part2json,'utf8', function (err) {
     if (err) throw err;
     });
+}
+
+fileReader(fileNames);
+data();

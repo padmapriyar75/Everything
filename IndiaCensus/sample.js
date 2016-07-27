@@ -20,7 +20,7 @@ var cn=function(){
 var m=6;
 var b=[];
 ​
-for (var i = 0; i <27 ; i++)
+for (var i = 0; i <20 ; i++)
  {
    //from to 7 to 19
    if(m>6 && m<20)
@@ -77,6 +77,6 @@ for (var i = 0; i <27 ; i++)
 console.log(b);
 var b1=JSON.stringify(b);
 //console.log(b1);
-fs.appendFile('out1.json', b1,'utf8', function (err) {
+fs.appendFile('samp out.json', b1,'utf8', function (err) {
  if (err) throw err;
 });

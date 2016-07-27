@@ -1,5 +1,5 @@
 var fs = require('fs');
-var f = fs.readFileSync("India2011.csv","utf8");
+var f = fs.readFileSync("IndiaSC2011.csv","utf8");
 var lines = f.split("\n");
 var last = lines.length-1;//number of records
 var heading=lines[0].split(",");
@@ -44,10 +44,11 @@ var cat1=heading.indexOf("Educational level - Literate without educational level
       array[i]=new pushingfunc();
     array[i][key1]= heading[arr[i]];
     array[i][key2]=total[i];
-    console.log(array[i][key2]);
+    // console.log(array[i][key2]);
+    console.log(array);
 }
     var part2json=JSON.stringify(array);
     //console.log(array);
-    fs.writeFile('part2out.json', part2json,'utf8', function (err) {
+    fs.writeFile('part2outSC.json', part2json,'utf8', function (err) {
     if (err) throw err;
     });
