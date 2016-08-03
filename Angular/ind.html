@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="app3" ng-init="person = {fName: 'Padmapriya', lName:'Rangarajan'}; capitals = [{city: 'Bangalore', state:'Karnataka'},{city: 'Chennai', state: 'Tamilnadu'}] " ng-cloak>
+  <head>
+    <meta charset="utf-8">
+    <title>AngualrJS</title>
+    <style>
+      [ng\:cloak], [ng-cloak], .ng-cloak {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div ng-controller="ctrl1">
+      <span>Values:</span>
+      <input type="text" ng-model="first"/>
+      <input type="text" ng-model="second"/>
+
+      <button ng-click="updateValue()">Sum</button>
+      <br><br>
+
+      {{calculation}}
+       <p> 5+5 = {{5+5}}   </p>
+       <p>Your first value is {{first}} </p>
+       <p>
+         <span data-ng-bind="second"></span>
+       </p> -->
+      <!--  <p>
+          {{person.fName + " " + person.lName}} you entered {{first + " and " + second}}
+        </p>
+        <ul>
+          <li ng-repeat="capital in capitals">
+            {{'City:' + capital.city + ',State: ' + capital.state}}
+          </li>
+        </ul> -->
+        <!-- <h4 ng-controller="ctrl1">First Random Number : {{randomNum1}} </h4>
+        <h4 ng-controller="ctrl1">Second Random Number : {{randomNum2}} </h4>
+
+        <h4 ng-controller="badCtrl">Im feeling : {{bad}} </h4>
+        <h4 ng-controller="goodCtrl">Im feeling : {{good}} </h4> -->
+
+        <div id="groceryList" ng-controller = "gListCtrl">
+          <h3 class="ListTitle">{{groceries.length}} Groceries to Get </h3>
+          <ol>
+
+          </ol>
+
+          <h3 class="ListTitle">
+            <span ng-bind = "groceries.length"></span> Groceries to get
+          </h3>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="ex3.js"></script>
+  </body>
+</html>
